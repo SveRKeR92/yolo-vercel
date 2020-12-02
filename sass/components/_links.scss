@@ -1,0 +1,81 @@
+
+a{
+    text-decoration: none;
+    color: $white;
+    cursor: $cursor-link;
+    text-transform: $uppercase;
+    display: inline-block;
+}
+
+li{
+    list-style: $list-style;
+    display: $li-display;
+}
+
+header li{
+    padding-left: 35px;
+}
+
+a:not(.link-header):not(.link-social):not(.link-footer){
+    padding: $medPadding;
+    background-color: $blue;
+    border: $border;
+    border-radius: $radius-link;
+    transition: $transition;
+    margin-top: $margin-top-medium;
+}
+
+a:not(.link-header):not(.link-footer):hover{
+    background-color: transparent;
+    color: $grey;
+}
+
+.capitalize{
+    text-transform: $capitalize;
+}
+
+.small-font{
+    font-size: 12px;
+    padding: $bigPadding !important;
+}
+
+article .mini-link{
+    padding: $smallPadding !important;
+}
+
+button{
+    display: block;
+    margin: 0 auto;
+    box-shadow: $shadow;
+    background-color: transparent;
+    border: none;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    transition: $transition;
+    outline: none;
+}
+
+button:hover{
+    cursor: $cursor-link;
+    transform: scale(1.2);
+}
+
+.vignet-container article a{
+    position: absolute;
+    margin-top: $margin-top-small;
+    bottom: 5%;
+    right: 10%;
+}
+
+a[type=button]{
+    text-transform: capitalize;
+}
+
+//RESPONSIVE
+
+@media screen and (max-width: 910px){
+    .header-container .link-header{
+        color: $blue;
+    }
+}

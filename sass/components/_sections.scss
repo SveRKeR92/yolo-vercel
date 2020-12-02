@@ -1,0 +1,202 @@
+section{
+    padding: $section-padding;
+    position:relative;
+    display: flex;
+    flex-direction: column;
+}
+
+// ========= FIRST SECTION =========
+
+.header-container{
+    min-height: $section-height;
+}
+
+.article-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.social-medias{
+    position: absolute;
+    left: 5%;
+    top: 40%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.social-medias img{
+    padding: 20px 0;
+}
+
+.social-medias div{
+    width: 3px;
+    height: 30px;
+    background-color: $blue;
+}
+
+
+// ========= SECOND SECTION =========
+
+.who-section{
+    flex-direction: row;
+    align-items: center;
+    padding-top: 100px;
+    background-image: $weAre;
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 55%;
+}
+
+.who-section > *{
+    width: 50%;
+}
+
+.who-section p{
+    margin-top: $margin-top-medium;
+}
+
+
+// ========= THIRD SECTION =========
+.services{
+    background-image: $services;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    padding-bottom: 280px;
+    margin-top: $margin-top-xl;
+}
+
+.vignet-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.vignet-container article{
+    position: relative;
+    margin: 0 $margin-top-small;
+    margin-top: $margin-top-xl;
+    width: $vignet-width;
+    min-height: 450px;
+    padding: 30px;
+    background-color: $white;
+    box-shadow: $shadow;
+    border-radius: $vignet-radius;
+}
+
+.vignet-container article div{
+    width: fit-content;
+    margin: 0 auto;
+    margin-bottom: $margin-top-medium;
+}
+
+
+// ========= FOURTH SECTION =========
+
+.prices {
+    padding:95px 10%;
+    background-color: $clay-bcg;
+    margin-top: $margin-top-xl;
+}
+
+.prices .vignet-container{
+    justify-content: space-around;
+}
+
+.prices .vignet-container article{
+    padding: 55px 40px;
+    min-height: auto;
+}
+
+var{
+    display: block;
+    width: 100%;
+    text-align: center;
+    color: $priceColor;
+    font-size: $h3Size;
+    font-weight: $semi-bold;
+    font-style: normal;
+    margin-top: $margin-top-medium;
+}
+
+.prices .vignet-container article a{
+    position: initial;
+}
+
+.prices .vignet-container article div{
+    margin-bottom: 0;
+}
+
+
+// ========= FIFTH SECTION =========
+
+.newsletter{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: $margin-top-xl;
+}
+
+.newsletter div{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: $margin-top-medium;
+}
+
+
+.newsletter div a{
+    margin-top: 0 !important;
+}
+
+
+
+// RESPONSIVE 
+@media screen and (min-width: 2000px){
+    .services .vignet-container article{
+        width: $vignet-wide;
+    }
+}
+
+@media screen and (max-width: 1650px){
+    .who-section img{
+        opacity: 0.2;
+    }
+}
+
+@media screen and (max-width: 1100px){
+    .who-section aside{
+        display: none;
+    }
+    .who-section{
+        justify-content: center;
+        background-position: center;
+    }
+    .who-section article{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1073px){
+    .services{
+        padding-bottom: 0;
+        background-image: none;
+    }
+}
+
+@media screen and (max-width: 950px){
+    .newsletter div{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .newsletter input{
+        width: 80%;
+    }
+
+    .newsletter div a{
+        display: block;
+        margin-top: $margin-top-medium !important;
+    }
+}

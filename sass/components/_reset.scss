@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: $poppins;
+    font-size: $normalSize;
+    font-weight: $regular;
+}
+
+
+
+
+
+
+
+
+::-webkit-scrollbar-track{
+    box-shadow: $scroll-shadowbox;
+    -webkit-box-shadow: $scroll-shadowbox;
+    border-radius: $scroll-borderrad;
+    background-color: $scroll-bcg;
+}
+
+::-webkit-scrollbar{
+    width: $scroll-width;
+    background-color: $scroll-bcg;
+}
+
+::-webkit-scrollbar-thumb{
+    border-radius: $scroll-borderrad;
+    box-shadow: $scroll-shadowbox;
+	-webkit-box-shadow: $scroll-shadowbox;
+	background-color: $scroll-bcg-thumb;
+}

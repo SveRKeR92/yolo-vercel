@@ -1,0 +1,83 @@
+//Displays
+$li-display: inline;
+
+//Fonts
+$lato: "Lato", sans-serif;
+$poppins: "Poppins", sans-serif;
+$lobster: "Lobster", sans-serif;
+$dosis: "Dosis", sans-serif;
+$light: 300;
+$regular: 400;
+$medium: 500;
+$semi-bold: 600;
+$bold: 700;
+$uppercase: uppercase;
+$capitalize: capitalize;
+
+//TextSize
+$h1Size: 40px;
+$h2Size: 50px;
+$XLSize: 74px;
+$h3Size: 30px;
+$h4Size: 20px;
+$normalSize: 16px;
+$descSize: 17px;
+$bigSize:18px;
+
+//Colors
+$white: #ffffff;
+$grey: #42495b;
+$lightgrey: #7a839e;
+$clay: #7e76f9;
+$clay-bcg: rgba(126, 118, 249, 0.15);
+$blue: #1a129f;
+$priceColor: #1000ff;
+$inputColor-bcg: #f6f7fb;
+$inputColor-txt: #999999;
+$shadow: 0 10px 20px 0 rgba(126, 118, 249, 0.16);
+
+//Links
+$text-decoration: none;
+$list-style: none;
+$cursor-link: pointer;
+$radius-link: 25px;
+$border: 1px solid $blue;
+$transition: 0.5s;
+
+//Paddings & Margins
+$headerPadding: 20px;
+$medPadding: 13px 40px;
+$bigPadding: 12px 50px;
+$smallPadding: 6px 18px;
+$inputPadding: 18px 30px;
+$footerPaddingTop: 250px;
+$footerPaddingBot: 80px;
+
+$margin-xs: 7px;
+$margin-top-small: 15px;
+$margin-top-medium: 35px;
+$margin-top-large: 69px;
+$margin-top-xl: 100px;
+
+
+//Scrollbar
+$scroll-borderrad: 10px;
+$scroll-shadowbox: inset 0 0 6px rgba(0, 0, 0, 0.3);
+$scroll-bcg: #f5f5f5;
+$scroll-bcg-thumb: #555;
+$scroll-width: 12px;
+
+//Sections
+$section-padding: 0 10%;
+$section-height: 100vh;
+$vignet-radius: 36px;
+$vignet-width: 400px;
+$vignet-wide: 30%;
+
+$footer-artWidth: 200px;
+
+//Backgrounds:
+$wave: url(../../img/wave.svg);
+$clouds: url(../../img/footer.png);
+$services: url(../../img/background-service.png);
+$weAre: url(../../img/background-we-are.png);

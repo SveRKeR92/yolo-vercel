@@ -1,0 +1,43 @@
+p{
+    color: $lightgrey;
+    font-weight: $light;
+}
+
+.headerdesc{
+    text-transform: $uppercase;
+}
+
+.light{
+    font-weight: $light;
+}
+
+.medium{
+    font-weight: $medium;
+}
+
+.semi-bold{
+    font-weight: $semi-bold;
+}
+
+.bold{
+    font-weight: $bold;
+}
+
+.desc{
+    font-family: $lato;
+    font-size: $descSize;
+    font-weight: $medium;
+    color: $grey;
+    margin-top: $margin-top-medium;
+}
+
+.services .desc{
+    margin-bottom: $margin-top-large;
+}
+
+.prices .desc{
+    text-align: center;
+    margin-top: $margin-top-large;
+    font-family: $poppins;
+    font-weight: $light;
+}

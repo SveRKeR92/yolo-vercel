@@ -1,0 +1,16 @@
+input{
+    padding: $inputPadding;
+    border: none;
+    border-radius: 5px;
+    width: 30%;
+    background-color: $inputColor-bcg;
+    color: $inputColor-txt;
+    font-size: 12px;
+    margin-right: 26px;
+    outline:none;
+}
+
+input::placeholder{
+    text-transform: capitalize;
+    opacity: 0.6;
+}

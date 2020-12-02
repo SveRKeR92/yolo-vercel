@@ -1,0 +1,77 @@
+.footer{
+    background-image: $clouds;
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: $margin-top-xl;
+    padding-top: $footerPaddingTop;
+}
+
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+footer a{
+    text-transform: none;
+}
+
+footer article{
+    width: $footer-artWidth;
+    padding-bottom: $footerPaddingBot;
+    margin: 0 $margin-top-small;
+}
+
+footer article *{
+    color: white;
+}
+
+.first{
+    text-align:center;
+}
+
+footer a[title=facebook], .footer a[title=google-plus]{
+    transform: rotate(-90deg);
+}
+
+footer a img{
+    filter: brightness(0) invert(1);
+    width: 25px;
+    height: auto;
+}
+
+.ul-first{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer ul:not(.ul-first){
+    display: flex;
+    flex-direction: column;
+}
+
+.footer ul:not(.ul-first) li{
+    margin-top: $margin-top-small;
+}
+
+.ul-third li{
+    display: flex;
+    justify-content: space-between;
+}
+
+i{
+    margin-right: $margin-xs;
+}
+
+
+//RESPONSIVE
+
+@media screen and (max-width: 575px){
+    .footer{
+        background-image: none;
+        background-color: $blue;
+        padding-top: $footerPaddingBot;
+    }
+}
